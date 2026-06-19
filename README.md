@@ -1,53 +1,45 @@
 # 🧮 Calculadora em Python
 
-Uma calculadora simples de linha de comando, feita em Python puro (sem bibliotecas externas).
+Calculadora feita em Python puro (sem bibliotecas externas), em duas versões:
 
-## Funcionalidades
+1. **`calculadora.py`** — versão de terminal (linha de comando)
+2. **`calculadora_gui.py`** — versão gráfica científica, com visual parecido com a calculadora do Google
 
-- ➕ Somar
-- ➖ Subtrair
-- ✖️ Multiplicar
-- ➗ Dividir (com aviso de divisão por zero)
-- 🔼 Potência (`a^b`)
-- √ Raiz quadrada
-- 💯 Porcentagem (ex: 20% de 150)
+---
 
-Ela também valida o que o usuário digita: se você digitar uma letra no lugar de um número, ela avisa e pede de novo.
+## 1. Versão de terminal — `calculadora.py`
 
-## Como rodar
+Menu simples no terminal com as operações: somar, subtrair, multiplicar, dividir, potência, raiz quadrada e porcentagem. Valida o que o usuário digita (se digitar letra no lugar de número, avisa e pede de novo).
 
-Você precisa ter o [Python 3](https://www.python.org/downloads/) instalado. Depois, no terminal:
+Para rodar:
 
 ```bash
 python calculadora.py
 ```
 
-(Em alguns sistemas o comando é `python3 calculadora.py`.)
+---
 
-Aí é só escolher uma opção do menu e seguir as instruções na tela.
+## 2. Versão gráfica — `calculadora_gui.py`
 
-## Exemplo
+Uma calculadora **científica** com interface gráfica (Tkinter), no estilo da calculadora do Google.
 
+Funcionalidades:
+
+- Operações básicas: `+  −  ×  ÷`
+- Potência (`xʸ`), raiz quadrada (`√`), fatorial (`x!`) e porcentagem (`%`)
+- Funções: `sin`, `cos`, `tan` (e as inversas com o botão **Inv**), `ln`, `log` e `EXP`
+- Constantes `π` e `e`
+- Modo **Rad / Deg** para as funções trigonométricas
+- Parênteses, **Ans** (último resultado) e **preview do resultado ao vivo** enquanto você digita
+- Suporte ao teclado: digite números e operadores, **Enter** = igual, **Backspace** apaga, **Esc** limpa tudo
+
+Para rodar:
+
+```bash
+python calculadora_gui.py
 ```
-====================================
-        CALCULADORA EM PYTHON
-====================================
-  1) Somar           (+)
-  2) Subtrair        (-)
-  3) Multiplicar     (x)
-  4) Dividir         (/)
-  5) Potência        (a^b)
-  6) Raiz quadrada   (V)
-  7) Porcentagem     (%)
-  0) Sair
-====================================
 
-Escolha uma opção: 1
-Primeiro número: 10
-Segundo número: 5
-
->> 10 + 5 = 15
-```
+> O Tkinter já vem junto com o Python, então não precisa instalar nada.
 
 ---
 
